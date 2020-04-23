@@ -41,7 +41,7 @@ if version_info[0] < 3 or version_info[1] < 8:
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
 CONFIG_CHECK = os.environ.get(
-    "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+    "", None)
 
 if CONFIG_CHECK:
     LOGS.info(
@@ -50,12 +50,12 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", "1138138")
+API_HASH = os.environ.get("API_HASH", "7a9ceb98f211c173f9a0d2b2d5e2c75a")
 
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOLkBu5_jGah_jGretgdbB3QF8erCNiZDB7gSLYTWkxC6BHoDh-UML1-eo8X-WLhowW_SOUSsoD64F-vr7j7axUdgEbED8vLgWqL5glmFF88qo0zbh1mFb62DikdnxrXgPxDQrHmwSBIDjz-OmJv-A49VNc8k2bZ6VZzxy7Mu_UJeXTLZQXRKgV8u1dEVIAzcpIGoI6xO-BcHXorggTv3wiE4euffm-o7ZYVOpo6EVt4as9iuvMjQx4aKCmp9LOGNU-vgoX1mbe53D0b5pwHb20hBFrhFh8RTkQ-lsdaNgQ-7UVGfZPKzFCmOYsPP6RqWCEmDSK6pF7IBx05kOK6J44DvPzs=")
 
 # Logging channel/group ID configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
@@ -65,7 +65,7 @@ BOTLOG = sb(os.environ.get("BOTLOG", "False"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 # Bleep Blop, this is a bot ;)
-PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
+PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
